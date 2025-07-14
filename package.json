@@ -12,6 +12,7 @@
   "dependencies": {
     "@tabler/icons-react": "^3.34.0",
     "@tailwindcss/vite": "^4.0.7",
+    "google-maps-react": "^2.0.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.6.2",

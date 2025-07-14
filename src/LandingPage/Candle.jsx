@@ -1,5 +1,10 @@
 import React from "react";
 import { IconShoppingCart } from "@tabler/icons-react";
+// import { IconBrandTwitter } from "@tabler/icons-react";
+// import { IconBrandFacebook } from "@tabler/icons-react";
+// import { IconBrandInstagram } from "@tabler/icons-react";
+// import { IconBrandPinterest } from "@tabler/icons-react";
+import Footer from "../Footer";
 
 const Candle = () => {
   return (
@@ -47,7 +52,7 @@ const Candle = () => {
               Buy Now
             </p>
           </div>
-          {/* camdle2 */}
+          {/* candle2 */}
           <div>
             <img className="rounded-md" src="./Images/candle14.jpeg" alt="" />
             <h3 className="pl-1 pt-1">Citrus Burst Candle</h3>
@@ -217,36 +222,98 @@ const Candle = () => {
 
       {/* overlapping */}
 
-      <div className="flex justify-center items-center my-10 space-x-[-35px] ">
-        <img
-          className="w-32 h-32 object-cover rounded-full border-[6px] border-amber-100 shadow-md z-10"
-          src="./Images/candle24.jpeg"
-          alt=""
-        />
-        <img
-          className="w-36 h-36 object-cover rounded-full border-[6px] border-gray-200 shadow-lg z-10"
-          src="./Images/candle25.jpeg"
-          alt=""
-        />
-        <img
-          className="w-32 h-32 object-cover rounded-full border-4 border-amber-100 shadow-md z-0"
-          src="./Images/candle26.jpeg"
-          alt=""
-        />
+      <div className="bg-amber-50">
+        <div className="flex justify-center items-center  space-x-[-35px] p-10">
+          <img
+            className="w-32 h-32 object-cover rounded-full border-[6px] border-amber-100 shadow-md z-10"
+            src="./Images/candle24.jpeg"
+            alt=""
+          />
+          <img
+            className="w-36 h-36 object-cover rounded-full border-[6px] border-gray-200 shadow-lg z-10"
+            src="./Images/candle25.jpeg"
+            alt=""
+          />
+          <img
+            className="w-32 h-32 object-cover rounded-full border-4 border-amber-100 shadow-md z-0"
+            src="./Images/candle26.jpeg"
+            alt=""
+          />
+        </div>
+        <div className="flex flex-col text-center gap-6 px-3 justify-center items-center m-7 ">
+          <h1 className="font-light text-2xl">
+            Transform your space with Serene Aura
+          </h1>
+          <p>
+            Bring tranquility and warmth to your home with our exquisite
+            collection of candles. Shop now and experience the difference.
+          </p>
+          <button className="flex  bottom-4 left-4 bg-amber-300 text-white p-4 rounded-md z-10">
+            <IconShoppingCart stroke={2} />
+            <span>Shop Now</span>
+          </button>
+        </div>
       </div>
-      <div className="flex flex-col text-center gap-6 px-3 justify-center items-center m-7 ">
-        <h1 className="font-light text-2xl">
-          Transform your space with Serene Aura
+
+      {/* FAQ */}
+      <div className=" bg-amber-50 ">
+        <h1 className="text-center justify-center items-center m-10 text-3xl font-bold ">
+          Frequently Asked Question
         </h1>
-        <p>
-          Bring tranquility and warmth to your home with our exquisite
-          collection of candles. Shop now and experience the difference.
-        </p>
-        <button className="flex  bottom-4 left-4 bg-amber-300 text-white p-4 rounded-md z-10">
-          <IconShoppingCart stroke={2} />
-          <span>Shop Now</span>
-        </button>
+
+        <div className="m-10">
+          <h2 className="font-semibold text-2xl">
+            What are Serene Aura candles made of?
+          </h2>
+          <p className="text-xl">
+            Our candles are crafted with natural soy wax, essential oils, and
+            lead-free cotton wicks for a clean and eco-friendly burn.
+          </p>
+        </div>
+        <hr className="border-t border-gray-600 w-full my-4" />
+
+        <div className="m-10">
+          <h2 className="font-semibold text-2xl">
+            How long do Serene Aura candles burn?
+          </h2>
+          <p className="text-xl">
+            Our candles burn for approximately 50-60 hours, providing
+            long-lasting fragrance and ambiance.
+          </p>
+        </div>
+        <hr className="border-t border-gray-600 w-full my-4" />
+        <div className="m-10">
+          <h2 className="font-semibold text-2xl">
+            Are Serene Aura candles safe for pets and children?
+          </h2>
+          <p className="text-xl">
+            While our candles are made with natural ingredients, we recommend
+            keeping them out of reach of pets and children and never leaving
+            them unattended.
+          </p>
+        </div>
+        <hr className="border-t border-gray-600 w-full my-4" />
       </div>
+      <Footer />
+
+      {/* footer */}
+
+      {/* <footer className="flex m-10 gap-190 ">
+        <div className="flex gap-6 text-l ">
+          <p>About Us</p>
+          <p>Candle collections</p>
+          <p>Home Fragrances</p>
+          <p>Contact Us</p>
+          <p>About</p>
+        </div>
+
+        <div className="flex gap-4 mt-4 md:mt-0 ">
+          <IconBrandTwitter stroke={2} />
+          <IconBrandFacebook stroke={2} />
+          <IconBrandInstagram stroke={2} />
+          <IconBrandPinterest stroke={2} />
+        </div>
+      </footer> */}
     </div>
   );
 };
